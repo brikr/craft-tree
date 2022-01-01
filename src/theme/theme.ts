@@ -5,6 +5,9 @@ export const theme = {
   colors: {
     background: materialPallete.grey[900].base,
     onBackground: materialPallete.white,
+
+    accent: materialPallete.amber[700].base,
+    onAccent: materialPallete.black,
   },
 };
 
