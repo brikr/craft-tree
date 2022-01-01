@@ -1,9 +1,10 @@
 import originalStyled, { ThemedStyledInterface } from "styled-components";
+import { materialPallete } from "./material-pallete";
 
 export const theme = {
   colors: {
-    background: "#ffffff",
-    onBackground: "#000000",
+    background: materialPallete.grey[900].base,
+    onBackground: materialPallete.white,
   },
 };
 
