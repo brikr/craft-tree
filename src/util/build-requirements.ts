@@ -1,6 +1,6 @@
 import { cloneDeep } from "lodash";
 import { CraftingTree } from "src/trees";
-import { isFoundItem, ItemList, ItemWithCount } from "src/types/items";
+import { isFoundItem, ItemList, TreeItemWithCount } from "src/types/items";
 
 // TODO: support crafting paths
 // type CraftingPath = Item[];
@@ -10,7 +10,7 @@ import { isFoundItem, ItemList, ItemWithCount } from "src/types/items";
 // }
 
 interface RequirementsList {
-  [name: string]: ItemWithCount;
+  [name: string]: TreeItemWithCount;
 }
 
 export function buildRequirements(
@@ -22,7 +22,10 @@ export function buildRequirements(
   for (const [name, { item, count }] of Object.entries(itemList)) {
     if (isFoundItem(item)) {
       // item has no ingredients, so just add it
-      final[name] = { item, count };
+      const foundList: RequirementsList = {
+        [name]: { item, count },
+      };
+      final = mergeRequirements(final, foundList);
     } else {
       // item has ingredients. build their requirements, multiply by this item's count, and add
       const ingredientItemList: ItemList = {};

@@ -3,6 +3,7 @@ import { useItemList } from "src/recoil/item-list";
 import { useSelectedTree } from "src/recoil/selected-tree";
 import { buildRequirements } from "src/util/build-requirements";
 import styled from "styled-components";
+import { Item } from "./item";
 
 export const Wrapper = styled.div`
   width: 300px;
@@ -20,9 +21,7 @@ export const Requirements: React.FC = () => {
     <Wrapper>
       <h2>Requirements</h2>
       {Object.entries(requirements).map(([name, { item, count }]) => (
-        <div key={name}>
-          {count} {name}
-        </div>
+        <Item key={name} name={name} item={item} count={count} />
       ))}
     </Wrapper>
   );

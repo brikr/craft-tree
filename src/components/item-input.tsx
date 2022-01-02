@@ -1,6 +1,6 @@
 import React, { useMemo, useRef } from "react";
 import { useSelectedTree } from "src/recoil/selected-tree";
-import { Item } from "src/types/items";
+import { TreeItem } from "src/types/items";
 import styled, { css } from "styled-components";
 
 const TextArea = styled.textarea`
@@ -29,10 +29,10 @@ const TextArea = styled.textarea`
 `;
 
 interface Props {
-  onAdd: (name: string, item: Item, count: number) => void;
+  onAdd: (name: string, item: TreeItem, count: number) => void;
 }
 
-export const ItemEntry: React.FC<Props> = ({ onAdd }) => {
+export const ItemInput: React.FC<Props> = ({ onAdd }) => {
   const { tree } = useSelectedTree();
   const itemNames = useMemo(() => Object.keys(tree.tree), [tree]);
 

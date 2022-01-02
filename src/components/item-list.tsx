@@ -1,8 +1,8 @@
 import React from "react";
 import { useItemList } from "src/recoil/item-list";
 import styled from "styled-components";
-import { Item } from "./item";
-import { ItemEntry } from "./item-entry";
+import { ItemInput } from "./item-input";
+import { ItemListEntry } from "./item-list-entry";
 
 export const Wrapper = styled.div`
   width: 300px;
@@ -19,7 +19,7 @@ export const ItemList: React.FC = () => {
     <Wrapper>
       <h2>Items</h2>
       {Object.entries(items).map(([name, { item, count }]) => (
-        <Item
+        <ItemListEntry
           key={name}
           name={name}
           item={item}
@@ -27,7 +27,7 @@ export const ItemList: React.FC = () => {
           onRemove={handleRemove}
         />
       ))}
-      <ItemEntry onAdd={addItem} />
+      <ItemInput onAdd={addItem} />
     </Wrapper>
   );
 };

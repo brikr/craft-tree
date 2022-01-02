@@ -1,9 +1,9 @@
-export interface BaseItem {
+export interface TreeBaseItem {
   url?: string;
   image?: string;
 }
 
-export interface CraftedItem extends BaseItem {
+export interface TreeCraftedItem extends TreeBaseItem {
   madeAt: string | string[];
   ingredients: Array<{
     name: string;
@@ -11,25 +11,25 @@ export interface CraftedItem extends BaseItem {
   }>;
 }
 
-export interface FoundItem extends BaseItem {
+export interface TreeFoundItem extends TreeBaseItem {
   source: string;
 }
 
-export type Item = FoundItem | CraftedItem;
+export type TreeItem = TreeFoundItem | TreeCraftedItem;
 
-export interface ItemWithCount {
-  item: Item;
+export interface TreeItemWithCount {
+  item: TreeItem;
   count: number;
 }
 
 export interface ItemList {
-  [name: string]: ItemWithCount;
+  [name: string]: TreeItemWithCount;
 }
 
-export function isFoundItem(item: Item): item is FoundItem {
-  return Boolean((item as FoundItem).source);
+export function isFoundItem(item: TreeItem): item is TreeFoundItem {
+  return Boolean((item as TreeFoundItem).source);
 }
 
-export function isCraftedItem(item: Item): item is CraftedItem {
+export function isCraftedItem(item: TreeItem): item is TreeCraftedItem {
   return !isFoundItem(item);
 }

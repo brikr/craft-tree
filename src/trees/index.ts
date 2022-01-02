@@ -1,4 +1,4 @@
-import { CraftedItem, FoundItem } from "src/types/items";
+import { TreeCraftedItem, TreeFoundItem } from "src/types/items";
 
 export const builtInTrees = {
   Terraria: "Terraria.json",
@@ -8,5 +8,5 @@ export const builtInTrees = {
 export interface CraftingTree {
   name: string;
   version: string;
-  tree: { [name: string]: CraftedItem | FoundItem };
+  tree: { [name: string]: TreeCraftedItem | TreeFoundItem };
 }
