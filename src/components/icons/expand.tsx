@@ -3,7 +3,7 @@ import { IconComponent } from "./types";
 
 export const ExpandIcon: IconComponent = ({ size = 24, color }) => {
   const theme = useTheme();
-  color ||= theme.colors.onBackground;
+  color = color || theme.colors.onBackground;
 
   return (
     <svg
