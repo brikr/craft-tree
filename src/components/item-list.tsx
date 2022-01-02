@@ -5,7 +5,7 @@ import { ItemInput } from "./item-input";
 import { ItemListEntry } from "./item-list-entry";
 
 export const Wrapper = styled.div`
-  width: 300px;
+  width: 500px;
 `;
 
 export const ItemList: React.FC = () => {

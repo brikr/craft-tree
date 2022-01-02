@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   gap: 50px;
+
+  padding: 0 20px;
 `;
 
 export const MainContent: React.FC = () => {

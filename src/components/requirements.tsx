@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Item } from "./item";
 
 export const Wrapper = styled.div`
-  width: 300px;
+  width: 500px;
 `;
 
 export const Requirements: React.FC = () => {
