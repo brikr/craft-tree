@@ -1,5 +1,5 @@
 import React from "react";
-import { IconComponent } from "src/icons/types";
+import { IconComponent } from "src/components/icons/types";
 import styled from "styled-components";
 
 const Button = styled.button`

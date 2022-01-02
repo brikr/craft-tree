@@ -1,6 +1,6 @@
-import { CloseIcon } from "src/icons/close";
+import { CloseIcon } from "src/components/icons/close";
 import { TreeItem } from "src/types/items";
-import styled, { useTheme } from "styled-components";
+import styled from "styled-components";
 import { IconButton } from "./icon-button";
 import { Item } from "./item";
 
@@ -8,11 +8,6 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-const Image = styled.img`
-  height: 24px;
-  image-rendering: pixelated;
 `;
 
 interface Props {
@@ -28,8 +23,6 @@ export const ItemListEntry: React.FC<Props> = ({
   count,
   onRemove,
 }) => {
-  const theme = useTheme();
-
   const handleRemove = () => {
     onRemove?.(name);
   };
@@ -37,11 +30,7 @@ export const ItemListEntry: React.FC<Props> = ({
   return (
     <Wrapper>
       <Item name={name} item={item} count={count} />
-      <IconButton
-        icon={CloseIcon}
-        color={theme.colors.onBackground}
-        onClick={handleRemove}
-      ></IconButton>
+      <IconButton icon={CloseIcon} onClick={handleRemove}></IconButton>
     </Wrapper>
   );
 };

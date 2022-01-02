@@ -1,7 +1,10 @@
-import React from "react";
+import { useTheme } from "styled-components";
 import { IconComponent } from "./types";
 
-export const CloseIcon: IconComponent = ({ size = 24, color = "#000000" }) => {
+export const CloseIcon: IconComponent = ({ size = 24, color }) => {
+  const theme = useTheme();
+  color ||= theme.colors.onBackground;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
