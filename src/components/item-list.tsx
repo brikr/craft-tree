@@ -20,9 +20,9 @@ export const ItemList: React.FC = () => {
     <Wrapper>
       <h2>Items</h2>
       {items.map(({ name, count }, idx) => (
-        <span key={idx}>
+        <div key={idx}>
           {count} {name}
-        </span>
+        </div>
       ))}
       <ItemEntry onAdd={handleAddItem} />
     </Wrapper>
