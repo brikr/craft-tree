@@ -1,6 +1,5 @@
 import React from "react";
-import { useRecoilState } from "recoil";
-import { selectedTreeAtom } from "src/recoil/atoms/selected-tree";
+import { useSelectedTree } from "src/recoil/atoms/selected-tree";
 import { styled } from "src/theme";
 import { builtInTrees } from "src/trees";
 import { css } from "styled-components";
@@ -22,10 +21,10 @@ const Wrapper = styled.div`
 `;
 
 export const AppBar: React.FC = () => {
-  const [selectedTree, setSelectedTree] = useRecoilState(selectedTreeAtom);
+  const { tree, loadNewTree } = useSelectedTree();
 
   const handleGameChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedTree(e.target.value as keyof typeof builtInTrees);
+    loadNewTree(e.target.value as keyof typeof builtInTrees);
   };
 
   return (
@@ -33,7 +32,7 @@ export const AppBar: React.FC = () => {
       <h1>Craft Tree</h1>
       <div>
         <label htmlFor="game">Game:</label>
-        <select name="game" onChange={handleGameChange} value={selectedTree}>
+        <select name="game" onChange={handleGameChange} value={tree.name}>
           {Object.keys(builtInTrees).map((name) => (
             <option key={name} value={name}>
               {name}
