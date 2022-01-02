@@ -1,7 +1,7 @@
 import React from "react";
-import { ItemWithCount, useItemList } from "src/recoil/atoms/item-list";
-import { useSelectedTree } from "src/recoil/atoms/selected-tree";
-import { styled } from "src/theme";
+import { useItemList } from "src/recoil/atoms/item-list";
+import styled from "styled-components";
+import { Item } from "./item";
 import { ItemEntry } from "./item-entry";
 
 export const Wrapper = styled.div`
@@ -9,22 +9,15 @@ export const Wrapper = styled.div`
 `;
 
 export const ItemList: React.FC = () => {
-  const { tree } = useSelectedTree();
   const { items, addItem } = useItemList();
-
-  const handleAddItem = (item: ItemWithCount) => {
-    addItem(item);
-  };
 
   return (
     <Wrapper>
       <h2>Items</h2>
-      {items.map(({ name, count }, idx) => (
-        <div key={idx}>
-          {count} {name}
-        </div>
+      {Object.entries(items).map(([name, { item, count }]) => (
+        <Item key={name} name={name} item={item} count={count} />
       ))}
-      <ItemEntry onAdd={handleAddItem} />
+      <ItemEntry onAdd={addItem} />
     </Wrapper>
   );
 };

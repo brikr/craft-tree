@@ -1,8 +1,7 @@
 import React from "react";
 import { useSelectedTree } from "src/recoil/atoms/selected-tree";
-import { styled } from "src/theme";
 import { builtInTrees } from "src/trees";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 
 const Wrapper = styled.div`
   ${({ theme }) => css`

@@ -1,12 +1,35 @@
 import React, { useMemo, useRef } from "react";
-import { ItemWithCount } from "src/recoil/atoms/item-list";
 import { useSelectedTree } from "src/recoil/atoms/selected-tree";
-import { styled } from "src/theme";
+import { CraftedItem, FoundItem } from "src/trees";
+import styled, { css } from "styled-components";
 
-const TextArea = styled.textarea``;
+const TextArea = styled.textarea`
+  ${({ theme }) => css`
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 30px;
+
+    font-size: 16px;
+
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid ${theme.colors.accent};
+    border-left: none;
+    resize: none;
+
+    background: rgba(0, 0, 0, 0);
+    color: ${theme.colors.onSurface};
+
+    &:focus {
+      outline: none;
+      background: ${theme.colors.surface};
+    }
+  `}
+`;
 
 interface Props {
-  onAdd: (item: ItemWithCount) => void;
+  onAdd: (name: string, item: FoundItem | CraftedItem, count: number) => void;
 }
 
 export const ItemEntry: React.FC<Props> = ({ onAdd }) => {
@@ -33,16 +56,17 @@ export const ItemEntry: React.FC<Props> = ({ onAdd }) => {
     const count = parseInt(match[1]);
     const itemNameQuery = match[2].trim().toLowerCase();
 
+    if (count === 0) {
+      // ignore zeroes
+      return;
+    }
+
     const result = itemNames.find(
       (name) => name.toLowerCase() === itemNameQuery
     );
 
     if (result) {
-      onAdd({
-        name: result,
-        item: tree.tree[result],
-        count: isNaN(count) ? 1 : count,
-      });
+      onAdd(result, tree.tree[result], isNaN(count) ? 1 : count);
 
       textAreaRef.current.value = "";
     }
@@ -55,5 +79,11 @@ export const ItemEntry: React.FC<Props> = ({ onAdd }) => {
     }
   };
 
-  return <TextArea ref={textAreaRef} onKeyDown={handleKeyDown} />;
+  return (
+    <TextArea
+      ref={textAreaRef}
+      onKeyDown={handleKeyDown}
+      placeholder="Add an item..."
+    />
+  );
 };

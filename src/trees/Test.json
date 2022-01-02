@@ -4,7 +4,7 @@
   "tree": {
     "Eternity": {
       "url": "https://calamitymod.fandom.com/wiki/Eternity",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/3/38/Eternity.png/revision/latest/scale-to-width-down/38?cb=20200401233420",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/3/38/Eternity.png",
       "madeAt": "Draedon's Forge",
       "ingredients": [
         {
@@ -43,17 +43,17 @@
     },
     "Seething Discharge": {
       "url": "https://calamitymod.fandom.com/wiki/Seething_Discharge",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/a/a3/Seething_Discharge.png/revision/latest/scale-to-width-down/28?cb=20190926035806",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/a/a3/Seething_Discharge.png",
       "source": "Brimstone Elemental"
     },
     "Slithering Eels": {
       "url": "https://calamitymod.fandom.com/wiki/Slithering_Eels",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/1/11/Slithering_Eels.png/revision/latest/scale-to-width-down/34?cb=20200401223913",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/1/11/Slithering_Eels.png",
       "source": "Acid Eels"
     },
     "Biofusillade": {
       "url": "https://calamitymod.fandom.com/wiki/Biofusillade",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/3/3c/Biofusillade.png/revision/latest/scale-to-width-down/30?cb=20191106031224",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/3/3c/Biofusillade.png",
       "madeAt": "Bookcase",
       "ingredients": [
         {
@@ -68,7 +68,7 @@
     },
     "Uelibloom Bar": {
       "url": "https://calamitymod.fandom.com/wiki/Uelibloom_Bar",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/7/70/Uelibloom_Bar.png/revision/latest/scale-to-width-down/32?cb=20191106032302",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/7/70/Uelibloom_Bar.png",
       "madeAt": [
         "Adamantite Forge",
         "Titanium Forge"
@@ -82,17 +82,17 @@
     },
     "Uelibloom Ore": {
       "url": "https://calamitymod.fandom.com/wiki/Uelibloom_Ore",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/0/0c/Uelibloom_Ore.png/revision/latest/scale-to-width-down/18?cb=20191125143243",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/0/0c/Uelibloom_Ore.png",
       "source": "Mined"
     },
     "Spell Tome": {
       "url": "https://terraria.fandom.com/wiki/Spell_Tome",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1e/Spell_Tome.png/revision/latest/scale-to-width-down/28?cb=20200814175730&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/1/1e/Spell_Tome.png",
       "source": "Wizard"
     },
     "Primordial Ancient": {
       "url": "https://calamitymod.fandom.com/wiki/Primordial_Ancient",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/5/50/Primordial_Ancient.png/revision/latest/scale-to-width-down/40?cb=20211117154537",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/5/50/Primordial_Ancient.png",
       "madeAt": "Bookcase",
       "ingredients": [
         {
@@ -115,7 +115,7 @@
     },
     "Primordial Earth": {
       "url": "https://calamitymod.fandom.com/wiki/Primordial_Earth",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/8/84/Primordial_Earth.png/revision/latest/scale-to-width-down/36?cb=20211117154548",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/8/84/Primordial_Earth.png",
       "madeAt": "Bookcase",
       "ingredients": [
         {
@@ -138,7 +138,7 @@
     },
     "Death Valley Duster": {
       "url": "https://calamitymod.fandom.com/wiki/Death_Valley_Duster",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/d/dc/Death_Valley_Duster.png/revision/latest/scale-to-width-down/36?cb=20211117153937",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/d/dc/Death_Valley_Duster.png",
       "madeAt": "Bookcase",
       "ingredients": [
         {
@@ -161,7 +161,7 @@
     },
     "Tradewinds": {
       "url": "https://calamitymod.fandom.com/wiki/Tradewinds",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/3/3e/Tradewinds.png/revision/latest/scale-to-width-down/28?cb=20191125144035",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/3/3e/Tradewinds.png",
       "madeAt": "Bookcase",
       "ingredients": [
         {
@@ -180,7 +180,7 @@
     },
     "Aerialite Bar": {
       "url": "https://calamitymod.fandom.com/wiki/Aerialite_Bar",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/2/27/Aerialite_Bar.png/revision/latest/scale-to-width-down/30?cb=20191125144337",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/2/27/Aerialite_Bar.png",
       "madeAt": "Furnace",
       "ingredients": [
         {
@@ -191,37 +191,37 @@
     },
     "Aerialite Ore": {
       "url": "https://calamitymod.fandom.com/wiki/Aerialite_Ore",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/9/9b/Aerialite_Ore.png/revision/latest/scale-to-width-down/14?cb=20191219000924",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/9/9b/Aerialite_Ore.png",
       "source": "Mined"
     },
     "Sunplate Block": {
       "url": "https://terraria.fandom.com/wiki/Sunplate_Block",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a1/Sunplate_Block.png/revision/latest/scale-to-width-down/16?cb=20200516222655&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a1/Sunplate_Block.png",
       "source": "Mined"
     },
     "Feather": {
       "url": "https://terraria.fandom.com/wiki/Feather",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/3/33/Feather.png/revision/latest/scale-to-width-down/24?cb=20200516212209&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/3/33/Feather.png",
       "source": "Harpy"
     },
     "Sturdy Fossil": {
       "url": "https://terraria.fandom.com/wiki/Sturdy_Fossil",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e1/Sturdy_Fossil.png/revision/latest/scale-to-width-down/18?cb=20200516222631&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/e/e1/Sturdy_Fossil.png",
       "source": "Mined"
     },
     "Forbidden Fragment": {
       "url": "https://terraria.fandom.com/wiki/Forbidden_Fragment",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/0/04/Forbidden_Fragment.png/revision/latest/scale-to-width-down/20?cb=20200516212633&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/0/04/Forbidden_Fragment.png",
       "source": "Sand Elemental"
     },
     "Desert Feather": {
       "url": "https://calamitymod.fandom.com/wiki/Desert_Feather",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/e/e0/Desert_Feather.png/revision/latest/scale-to-width-down/24?cb=20211117151953",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/e/e0/Desert_Feather.png",
       "source": "Vulture"
     },
     "Meteorite Bar": {
       "url": "https://terraria.fandom.com/wiki/Meteorite_Bar",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a2/Meteorite_Bar.png/revision/latest/scale-to-width-down/30?cb=20200516215259&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a2/Meteorite_Bar.png",
       "madeAt": "Furnace",
       "ingredients": [
         {
@@ -232,42 +232,42 @@
     },
     "Meteorite": {
       "url": "https://terraria.fandom.com/wiki/Meteorite",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9e/Meteorite.png/revision/latest/scale-to-width-down/16?cb=20200516215326&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/9/9e/Meteorite.png",
       "source": "Mined"
     },
     "Ectoplasm": {
       "url": "https://terraria.fandom.com/wiki/Ectoplasm",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/3/36/Ectoplasm.png/revision/latest/scale-to-width-down/24?cb=20200516211757&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/3/36/Ectoplasm.png",
       "source": "Dungeon Spirit"
     },
     "Cosmilite Bar": {
       "url": "https://calamitymod.fandom.com/wiki/Cosmilite_Bar",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/4/41/Cosmilite_Bar.gif/revision/latest/scale-to-width-down/30?cb=20191206165704",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/4/41/Cosmilite_Bar.gif",
       "source": "The Devourer of Gods"
     },
     "Endothermic Energy": {
       "url": "https://calamitymod.fandom.com/wiki/Endothermic_Energy",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/1/1c/Endothermic_Energy.gif/revision/latest/scale-to-width-down/36?cb=20200310163504",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/1/1c/Endothermic_Energy.gif",
       "source": "Frost Moon"
     },
     "Heresy": {
       "url": "https://calamitymod.fandom.com/wiki/Heresy",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/4/4f/Heresy.gif/revision/latest/scale-to-width-down/48?cb=20211117010506",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/4/4f/Heresy.gif",
       "source": "Supreme Calamitas"
     },
     "Dark Plasma": {
       "url": "https://calamitymod.fandom.com/wiki/Dark_Plasma",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/2/2d/Dark_Plasma.gif/revision/latest/scale-to-width-down/30?cb=20200802035828",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/2/2d/Dark_Plasma.gif",
       "source": "Ceaseless Void"
     },
     "Unicorn Horn": {
       "url": "https://terraria.fandom.com/wiki/Unicorn_Horn",
-      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/6/67/Unicorn_Horn.png/revision/latest/scale-to-width-down/14?cb=20200516223250&format=original",
+      "image": "https://static.wikia.nocookie.net/terraria_gamepedia/images/6/67/Unicorn_Horn.png",
       "source": "Unicorn"
     },
     "Shadowspec Bar": {
       "url": "https://calamitymod.fandom.com/wiki/Shadowspec_Bar",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/9/9c/Shadowspec_Bar.gif/revision/latest/scale-to-width-down/38?cb=20200221210135",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/9/9c/Shadowspec_Bar.gif",
       "madeAt": "Draedon's Forge",
       "ingredients": [
         {
@@ -286,7 +286,7 @@
     },
     "Auric Bar": {
       "url": "https://calamitymod.fandom.com/wiki/Auric_Bar",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/e/ea/Auric_Bar.gif/revision/latest/scale-to-width-down/50?cb=20211118002837",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/e/ea/Auric_Bar.gif",
       "madeAt": "Cosmic Anvil",
       "ingredients": [
         {
@@ -301,22 +301,22 @@
     },
     "Auric Ore": {
       "url": "https://calamitymod.fandom.com/wiki/Auric_Ore",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/8/8a/Auric_Ore.png/revision/latest/scale-to-width-down/14?cb=20180615014346",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/8/8a/Auric_Ore.png",
       "source": "Mined"
     },
     "Yharon Soul Fragment": {
       "url": "https://calamitymod.fandom.com/wiki/Yharon_Soul_Fragment",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/5/54/Yharon_Soul_Fragment.png/revision/latest/scale-to-width-down/26?cb=20180508055043",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/5/54/Yharon_Soul_Fragment.png",
       "source": "Jungle Dragon, Yharon"
     },
     "Exo Prism": {
       "url": "https://calamitymod.fandom.com/wiki/Exo_Prism",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/c/c8/Exo_Prism.png/revision/latest/scale-to-width-down/32?cb=20211117011946",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/c/c8/Exo_Prism.png",
       "source": "Exo Mechs"
     },
     "Ashes of Annihilation": {
       "url": "https://calamitymod.fandom.com/wiki/Ashes_of_Annihilation",
-      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/1/19/Ashes_of_Annihilation.gif/revision/latest/scale-to-width-down/56?cb=20211117042008",
+      "image": "https://static.wikia.nocookie.net/calamitymod_gamepedia_en/images/1/19/Ashes_of_Annihilation.gif",
       "source": "Supreme Calamitas"
     }
   }
