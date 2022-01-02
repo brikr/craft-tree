@@ -1,5 +1,5 @@
 import { CloseIcon } from "src/icons/close";
-import { CraftedItem, FoundItem } from "src/trees";
+import { Item as TItem } from "src/types/items";
 import styled, { useTheme } from "styled-components";
 import { IconButton } from "./icon-button";
 import { Text } from "./text";
@@ -24,7 +24,7 @@ const Image = styled.img`
 
 interface Props {
   name: string;
-  item: CraftedItem | FoundItem;
+  item: TItem;
   count: number;
   onRemove?: (name: string) => void;
 }

@@ -1,6 +1,6 @@
 import React, { useMemo, useRef } from "react";
 import { useSelectedTree } from "src/recoil/selected-tree";
-import { CraftedItem, FoundItem } from "src/trees";
+import { Item } from "src/types/items";
 import styled, { css } from "styled-components";
 
 const TextArea = styled.textarea`
@@ -29,7 +29,7 @@ const TextArea = styled.textarea`
 `;
 
 interface Props {
-  onAdd: (name: string, item: FoundItem | CraftedItem, count: number) => void;
+  onAdd: (name: string, item: Item, count: number) => void;
 }
 
 export const ItemEntry: React.FC<Props> = ({ onAdd }) => {

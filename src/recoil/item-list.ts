@@ -1,13 +1,6 @@
 import { cloneDeep } from "lodash";
 import { atom, useRecoilState } from "recoil";
-import { CraftedItem, FoundItem } from "src/trees";
-
-interface ItemList {
-  [name: string]: {
-    count: number;
-    item: FoundItem | CraftedItem;
-  };
-}
+import { Item, ItemList } from "src/types/items";
 
 export const itemListAtom = atom<ItemList>({
   key: "itemList",
@@ -17,11 +10,7 @@ export const itemListAtom = atom<ItemList>({
 export const useItemList = () => {
   const [items, setItems] = useRecoilState(itemListAtom);
 
-  const addItem = (
-    name: string,
-    item: FoundItem | CraftedItem,
-    count: number
-  ) => {
+  const addItem = (name: string, item: Item, count: number) => {
     setItems((prev) => {
       const newItems = cloneDeep(prev);
       if (prev[name] !== undefined) {
