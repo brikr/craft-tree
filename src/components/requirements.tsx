@@ -19,6 +19,11 @@ export const Requirements: React.FC = () => {
   return (
     <Wrapper>
       <h2>Requirements</h2>
+      {Object.entries(requirements).map(([name, { item, count }]) => (
+        <div key={name}>
+          {count} {name}
+        </div>
+      ))}
     </Wrapper>
   );
 };

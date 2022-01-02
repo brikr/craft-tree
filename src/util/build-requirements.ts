@@ -19,9 +19,25 @@ export function buildRequirements(
 ): RequirementsList {
   let final: RequirementsList = {};
 
-  for (const [name, itemAndCount] of Object.entries(itemList)) {
-    const next = buildRequirementsForItem(name, itemAndCount, tree);
-    final = mergeRequirements(final, next);
+  for (const [name, { item, count }] of Object.entries(itemList)) {
+    if (isFoundItem(item)) {
+      // item has no ingredients, so just add it
+      final[name] = { item, count };
+    } else {
+      // item has ingredients. build their requirements, multiply by this item's count, and add
+      const ingredientItemList: ItemList = {};
+      for (const ingredient of item.ingredients) {
+        ingredientItemList[ingredient.name] = {
+          item: tree.tree[ingredient.name],
+          count: ingredient.count,
+        };
+      }
+      const requirements = multiplyRequirements(
+        buildRequirements(ingredientItemList, tree),
+        count
+      );
+      final = mergeRequirements(final, requirements);
+    }
   }
 
   return final;
@@ -47,18 +63,18 @@ function mergeRequirements(
   return final;
 }
 
-function buildRequirementsForItem(
-  name: string,
-  { item, count }: ItemWithCount,
-  tree: CraftingTree
+function multiplyRequirements(
+  list: RequirementsList,
+  multiplicant: number
 ): RequirementsList {
-  if (isFoundItem(item)) {
-    return {
-      [name]: {
-        item,
-        count,
-      },
+  const final: RequirementsList = {};
+
+  for (const [name, itemWithCount] of Object.entries(list)) {
+    final[name] = {
+      ...itemWithCount,
+      count: itemWithCount.count * multiplicant,
     };
   }
-  return {};
+
+  return final;
 }
