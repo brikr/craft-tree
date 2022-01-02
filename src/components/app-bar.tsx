@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelectedTree } from "src/recoil/atoms/selected-tree";
+import { useSelectedTree } from "src/recoil/selected-tree";
 import { builtInTrees } from "src/trees";
 import styled, { css } from "styled-components";
 

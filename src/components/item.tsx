@@ -1,6 +1,7 @@
 import { CloseIcon } from "src/icons/close";
 import { CraftedItem, FoundItem } from "src/trees";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
+import { IconButton } from "./icon-button";
 import { Text } from "./text";
 
 const Wrapper = styled.div`
@@ -25,9 +26,16 @@ interface Props {
   name: string;
   item: CraftedItem | FoundItem;
   count: number;
+  onRemove?: (name: string) => void;
 }
 
-export const Item: React.FC<Props> = ({ name, item, count }) => {
+export const Item: React.FC<Props> = ({ name, item, count, onRemove }) => {
+  const theme = useTheme();
+
+  const handleRemove = () => {
+    onRemove?.(name);
+  };
+
   return (
     <Wrapper>
       <Text>
@@ -35,7 +43,11 @@ export const Item: React.FC<Props> = ({ name, item, count }) => {
       </Text>
       {item.image && <Image src={item.image} />}
       <Space />
-      <CloseIcon />
+      <IconButton
+        icon={CloseIcon}
+        color={theme.colors.onBackground}
+        onClick={handleRemove}
+      ></IconButton>
     </Wrapper>
   );
 };

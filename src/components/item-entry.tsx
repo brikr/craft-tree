@@ -1,5 +1,5 @@
 import React, { useMemo, useRef } from "react";
-import { useSelectedTree } from "src/recoil/atoms/selected-tree";
+import { useSelectedTree } from "src/recoil/selected-tree";
 import { CraftedItem, FoundItem } from "src/trees";
 import styled, { css } from "styled-components";
 

@@ -38,5 +38,13 @@ export const useItemList = () => {
     });
   };
 
-  return { items, addItem };
+  const removeItem = (name: string) => {
+    setItems((prev) => {
+      const newItems = cloneDeep(prev);
+      delete newItems[name];
+      return newItems;
+    });
+  };
+
+  return { items, addItem, removeItem };
 };
